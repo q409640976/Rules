@@ -135,7 +135,6 @@ Proxy Group:
 
 # 自用规则补充
 Rule:
-- DOMAIN-SUFFIX,1e100.net,AWS-SG
 - DOMAIN-KEYWORD,paypal,Paypal
 - DOMAIN-SUFFIX,paypal.com,Paypal
 - DOMAIN-SUFFIX,e-hentai.org,Eh

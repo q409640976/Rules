@@ -137,6 +137,8 @@ Proxy Group:
 Rule:
 - DOMAIN-KEYWORD,paypal,Paypal
 - DOMAIN-SUFFIX,paypal.com,Paypal
+- DOMAIN-KEYWORD,alibabacloud,DIRECT
+- DOMAIN-KEYWORD,aliyun,DIRECT
 - DOMAIN-SUFFIX,e-hentai.org,Eh
 - DOMAIN-SUFFIX,exhentai.org,Eh
 - SRC-IP-CIDR,192.168.1.146/32,DIRECT

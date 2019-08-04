@@ -1,6 +1,5 @@
 # 自用规则补充
 Rule:
-- DOMAIN-SUFFIX,evernote.com,PROXY
 - DOMAIN-KEYWORD,paypal,Paypal
 - DOMAIN-SUFFIX,paypal.com,Paypal
 - DOMAIN-SUFFIX,evernote.com,PROXY

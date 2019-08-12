@@ -69,3 +69,6 @@ URL-REGEX,https?://update.pan.baidu.com/statistics
 URL-REGEX,https?://wapwenku.baidu.com/view/fengchao/
 URL-REGEX,https?://wapwenku.baidu.com/view/fengchaoTwojump/
 URL-REGEX,https?://wenku.baidu.com/shifen/
+URL-REGEX,https?://c.tieba.baidu.com/c/s/splashSchedule
+URL-REGEX,https?://cover.baidu.com/cover/page/dspSwitchAds/
+URL-REGEX,https?://.+/client/phpui2/

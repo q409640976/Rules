@@ -1,4 +1,3 @@
-DOMAIN-SUFFIX,nsclick.baidu.com
 DOMAIN-SUFFIX,a.baidu.com
 DOMAIN-SUFFIX,adm.baidu.com
 DOMAIN-SUFFIX,api.youqian.baidu.com
@@ -70,5 +69,6 @@ URL-REGEX,https?://wapwenku.baidu.com/view/fengchao/
 URL-REGEX,https?://wapwenku.baidu.com/view/fengchaoTwojump/
 URL-REGEX,https?://wenku.baidu.com/shifen/
 URL-REGEX,https?://c.tieba.baidu.com/c/s/splashSchedule
+URL-REGEX,"^http:\/\/[\s\S]*baidu\.com/.*ad[xs]\.php"
 URL-REGEX,https?://cover.baidu.com/cover/page/dspSwitchAds/
 URL-REGEX,https?://.+/client/phpui2/

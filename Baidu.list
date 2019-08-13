@@ -157,7 +157,6 @@ URL-REGEX,^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch
 URL-REGEX,^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/
 URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src=
 URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd=
-URL-REGEX,^http:\/\/[\s\S]*baidu\.com/.*ad[xs]\.php
 URL-REGEX,^https?:\/\/fcvbjbcebos\.baidu\.com\/.+\.mp4
 URL-REGEX,^https?:\/\/gss0\.bdstatic\.com\/.+\/static\/wiseindex\/img\/bd_red_packet\.png
 URL-REGEX,^https?:\/\/sm\.domobcdn\.com\/ugc\/\w\/

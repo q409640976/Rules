@@ -1,0 +1,11 @@
+# Zhihu
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN-SUFFIX,xdrig.com,REJECT
+URL-REGEX,https://api.zhihu.com/(fringe|zst|real_time|ad-style-service|ab|banners|topstory/hot-lists|market/popover|mqtt),REJECT
+URL-REGEX,https://api.zhihu.com.*(launch|recommendations),REJECT
+URL-REGEX,https://api.zhihu.com/search/(top|tabs|preset),REJECT
+URL-REGEX,https://api.zhihu.com/answers/.*/comments/featured-comment-ad,REJECT
+USER-AGENT,AVOS*,REJECT
+AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT
+AND,((USER-AGENT,osee2*), (NOT,((DOMAIN,api.zhihu.com))), (NOT,((DOMAIN,lens.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT
+# Client

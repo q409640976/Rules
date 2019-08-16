@@ -1,0 +1,6 @@
+URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+&oad
+URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+ctier
+URL-REGEX,^https?:\/\/shimo\.im\/api\/ads\?(.+)
+URL-REGEX,^https?:\/\/interface\.music\.163\.com\/eapi/ad
+URL-REGEX,^https?:\/\/iadmusicmat\.music\.126\.net\/.*jpg$
+URL-REGEX,^https?:\/\/p\.c\.music\.126\.net\/.*jpg$

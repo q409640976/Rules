@@ -3,6 +3,7 @@ Rule:
 - DOMAIN-KEYWORD,paypal,Paypal
 - DOMAIN-SUFFIX,paypal.com,Paypal
 - DOMAIN-SUFFIX,evernote.com,PROXY
+- DOMAIN-SUFFIX,m-team.cc,PROXY
 - DOMAIN-SUFFIX,alibabacloud.com,DIRECT
 - DOMAIN-SUFFIX,aliyun.com,DIRECT
 - DOMAIN-SUFFIX,alibaba.com,DIRECT

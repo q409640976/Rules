@@ -1,3 +1,4 @@
+# > Gmail,Outlook
 Rule:
 - DOMAIN,pop.gmail.com,Mail
 - DOMAIN,imap.gmail.com,Mail

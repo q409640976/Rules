@@ -1,0 +1,3 @@
+# > Speedtest by Ookla
+Rule:
+DOMAIN-KEYWORD,speedtest,SpeedTest

@@ -1,0 +1,5 @@
+# > Youtube
+Rule:
+- DOMAIN-SUFFIX,googlevideo.com,Youtube
+- DOMAIN-SUFFIX,youtube.com,Youtube
+- DOMAIN,youtubei.googleapis.com,Youtube

@@ -165,3 +165,13 @@ URL-REGEX,^https?:\/\/wapwenku\.baidu\.com\/view\/fengchao\/
 URL-REGEX,^https?:\/\/wapwenku\.baidu\.com\/view\/fengchaoTwojump\/
 URL-REGEX,^https?:\/\/wenku\.baidu\.com\/shifen\/
 URL-REGEX,^https?:\/\/cover\.baidu\.com\/cover\/page\/dspSwitchAds\/
+URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+&oad
+URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+ctier
+URL-REGEX,^https?:\/\/shimo\.im\/api\/ads\?(.+)
+URL-REGEX,^https?:\/\/interface\.music\.163\.com\/eapi/ad
+URL-REGEX,^https?:\/\/iadmusicmat\.music\.126\.net\/.*jpg$
+URL-REGEX,^https?:\/\/p\.c\.music\.126\.net\/.*jpg$
+URL-REGEX,^http:\/\/www\.xyyh\.xyz\/apptc\/msg\.php$
+DOMAIN,easydown.stnts.com
+DOMAIN-SUFFIX,gratefulvideo.jp
+DOMAIN,ad.caprofitx.adtdp.com

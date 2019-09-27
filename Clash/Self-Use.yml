@@ -10,3 +10,4 @@ Rule:
 - DOMAIN,ipv4.icanhazip.com,DIRECT
 - DOMAIN-KEYWORD,e-hentai,Eh
 - DOMAIN-KEYWORD,exhentai,Eh
+- SRC-IP-CIDR,192.168.1.233/32,DIRECT

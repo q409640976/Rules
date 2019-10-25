@@ -32,3 +32,6 @@ Rule:
 - DOMAIN-SUFFIX,nintendo.co.za,REJECT
 - DOMAIN-SUFFIX,nintendo.se,REJECT
 - DOMAIN-SUFFIX,nintendo.ch,REJECT
+- DOMAIN-SUFFIX,nintendoswitch.com,REJECT
+- DOMAIN-SUFFIX,nintendoswitch.com.cn,REJECT
+- DOMAIN-SUFFIX,nintendoswitch.cn,REJECT

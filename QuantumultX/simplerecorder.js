@@ -2,7 +2,9 @@ var obj = JSON.parse($response.body);
 var bundle_id = obj.receipt["bundle_id"];
 if(bundle_id == "cn.linfei.SimpleRecorder")
 {
-obj = {"status":0, "environment":"Production",
+obj.receipt.in_app = [
+{"quantity":"1", "product_id":"cn.linfei.SimpleRecorder.Plus.Monthly", "transaction_id":"330000538609468", "original_transaction_id":"330000538609468", "purchase_date":"2019-10-27 14:04:46 Etc/GMT", "purchase_date_ms":"1572185086000", "purchase_date_pst":"2019-10-27 07:04:46 America/Los_Angeles", "original_purchase_date":"2019-10-27 14:04:47 Etc/GMT", "original_purchase_date_ms":"1572185087000", "original_purchase_date_pst":"2019-10-27 07:04:47 America/Los_Angeles", "expires_date":"2999-10-30 14:04:46 Etc/GMT", "expires_date_ms":"1572444286000", "expires_date_pst":"2999-10-30 07:04:46 America/Los_Angeles", "web_order_line_item_id":"330000185047927", "is_trial_period":"true", "is_in_intro_offer_period":"false"}]
+/* obj = {"status":0, "environment":"Production",
 "receipt":{"receipt_type":"Production", "adam_id":1177522900, "app_item_id":1177522900, "bundle_id":"cn.linfei.SimpleRecorder", "application_version":"3610", "download_id":73047353174797, "version_external_identifier":833265016, "receipt_creation_date":"2019-10-28 02:48:35 Etc/GMT", "receipt_creation_date_ms":"1572230915000", "receipt_creation_date_pst":"2019-10-27 19:48:35 America/Los_Angeles", "request_date":"2019-10-28 02:48:36 Etc/GMT", "request_date_ms":"1572230916535", "request_date_pst":"2019-10-27 19:48:36 America/Los_Angeles", "original_purchase_date":"2019-08-02 19:13:48 Etc/GMT", "original_purchase_date_ms":"1564773228000", "original_purchase_date_pst":"2019-08-02 12:13:48 America/Los_Angeles", "original_application_version":"3100",
 "in_app":[
 {"quantity":"1", "product_id":"cn.linfei.SimpleRecorder.Plus.Monthly", "transaction_id":"330000538609468", "original_transaction_id":"330000538609468", "purchase_date":"2019-10-27 14:04:46 Etc/GMT", "purchase_date_ms":"1572185086000", "purchase_date_pst":"2019-10-27 07:04:46 America/Los_Angeles", "original_purchase_date":"2019-10-27 14:04:47 Etc/GMT", "original_purchase_date_ms":"1572185087000", "original_purchase_date_pst":"2019-10-27 07:04:47 America/Los_Angeles", "expires_date":"2999-10-30 14:04:46 Etc/GMT", "expires_date_ms":"1572444286000", "expires_date_pst":"2999-10-30 07:04:46 America/Los_Angeles", "web_order_line_item_id":"330000185047927", "is_trial_period":"true", "is_in_intro_offer_period":"false"}]},
@@ -12,4 +14,5 @@ obj = {"status":0, "environment":"Production",
 "pending_renewal_info":[
 {"auto_renew_product_id":"cn.linfei.SimpleRecorder.Plus.Monthly", "original_transaction_id":"330000538609468", "product_id":"cn.linfei.SimpleRecorder.Plus.Monthly", "auto_renew_status":"0"}]}
 }
+*/
 $done({body: JSON.stringify(obj)});

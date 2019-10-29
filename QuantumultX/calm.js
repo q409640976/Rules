@@ -17,7 +17,7 @@ obj["subscription"]= {
     "payment_processor": "itunes",
     "has_ever_done_free_trial": true,
     "is_free": false,
-    "is_lifetime": false,
+    "is_lifetime": true,
     "free_trial_ended": "2999-11-05T19:03:31.000Z",
     "ios_details": {
       "id": "330000539438840",

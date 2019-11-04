@@ -1,34 +1,12 @@
-body = $response.body.replace(/while.{7}\n/, "");
-let obj = JSON.parse(body);
-obj.entitlement.status="subscriber";
-obj.current_subs={
-      "product_id": "lightroom",
-      "store": "adobe",
-      "purchase_date": "2019-10-10T16:32:10.254954Z",
-      "sao": {
-        "inpkg_CCES": "0",
-        "inpkg_CCLE": "1",
-        "inpkg_CCSN": "0",
-        "inpkg_CCSV": "0",
-        "inpkg_LCCC": "0",
-        "inpkg_LPES": "0",
-        "inpkg_LRBRL": "0",
-        "inpkg_LRMAC": "0",
-        "inpkg_LRMC": "0",
-        "inpkg_LRMP": "0",
-        "inpkg_LRTB": "0",
-        "inpkg_PHLT": "0",
-        "inpkg_PHLT2": "0",
-        "inpkg_PLES": "0",
-        "storage_quota": "100"
-      }
-    };
-obj.entitlement.storage={
-      "used": 0,
-      "limit": 1154487209165,
-      "display_limit": 1099511627776,
-      "warn": 992137445376
-    };
-obj.avatar.placeholder=true;
-body = JSON.stringify(obj); 
-$done({body});
+let obj=JSON.parse($response.body)
+obj.appLicenseMode = "PAID";
+obj.legacyProfile = "{\"licenseId\":\"E048E402B5A7AFD9FB3A\",\"licenseType\":3,\"licenseVersion\":\"90.0\",\"effectiveEndTimestamp\":32501289540000,\"graceTime\":432000000,\"licensedFeatures\":[],\"enigmaData\":{\"productId\":45,\"serialKey\":\"911900138127842952847770\",\"clearSerialKey\":\"10454831434290314072\",\"locale\":\"ALL\",\"associatedLocales\":\"ALL\",\"platform\":0,\"isk\":454044,\"customerId\":0,\"deliveryMethod\":3,\"pc\":true,\"rb\":false}}";
+obj.relationshipProfile = "[{\"profileGenerationTimestamp\":1572872343770,\"licenseId\":\"E048E402B5A7AFD9FB3A\",\"licenseExpiryTimestamp\":32501289540000,\"appEntitlementStatus\":\"SUBSCRIPTION\",\"activationType\":\"NAMED_USER\",\"billingStatus\":\"NORMAL\",\"usedForLegacyProfile\":true,\"licenseExpiryWarningControl\":{\"warningStartTimestamp\":32501289540000,\"warningInterval\":0}}]";
+obj.workflow = {
+  "id": "start_purchase",
+  "instanceId": "c7f147c3-1d76-43f4-9647-0174a99df3ac",
+  "version": "1",
+  "type": "APP_STORE_WORKFLOW",
+  "onAbort": "CONTINUE"
+ };
+$done({body:JSON.stringify(obj)})

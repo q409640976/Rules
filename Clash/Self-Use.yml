@@ -1,6 +1,8 @@
 # 自用规则补充
 Rule:
 - DOMAIN-SUFFIX,evernote.com,PROXY
+- DOMAIN-SUFFIX,btschool.club,PROXY
+- DOMAIN-SUFFIX,pter.club,PROXY
 - DOMAIN-SUFFIX,hostloc.com,DIRECT
 - DOMAIN-SUFFIX,alibabacloud.com,DIRECT
 - DOMAIN-SUFFIX,aliyun.com,DIRECT

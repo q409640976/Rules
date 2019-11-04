@@ -1,3 +1,5 @@
+// URL = ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1
+
 let obj=JSON.parse($response.body)
 obj.mobileProfile.profileStatus = "PROFILE_AVAILABLE";
 obj.mobileProfile.appLicenseMode = "PAID";

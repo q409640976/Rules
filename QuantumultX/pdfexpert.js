@@ -1,3 +1,5 @@
+// URL = ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/refresh
+
 let obj = JSON.parse($response.body);
 obj= {
   "originalTransactionId": "20000618444996",

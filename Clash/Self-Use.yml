@@ -1,12 +1,12 @@
 # 自用规则补充
-DOMAIN-SUFFIX,evernote.com,PROXY
-DOMAIN-SUFFIX,btschool.club,PROXY
-DOMAIN-SUFFIX,pter.club,PROXY
+DOMAIN-SUFFIX,evernote.com,🍃PROXY
+DOMAIN-SUFFIX,btschool.club,🍃PROXY
+DOMAIN-SUFFIX,pter.club,🍃PROXY
 DOMAIN-SUFFIX,hostloc.com,DIRECT
 DOMAIN-SUFFIX,alibabacloud.com,DIRECT
 DOMAIN-SUFFIX,aliyun.com,DIRECT
 DOMAIN-SUFFIX,alibaba.com,DIRECT
 DOMAIN-SUFFIX,aliyuncs.com,DIRECT
 DOMAIN,ipv4.icanhazip.com,DIRECT
-DOMAIN-KEYWORD,e-hentai,US-RELAY 
-DOMAIN-KEYWORD,exhentai,US-RELAY
+DOMAIN-KEYWORD,e-hentai,🇺🇸US-RELAY 
+DOMAIN-KEYWORD,exhentai,🇺🇸US-RELAY

@@ -6,4 +6,3 @@ DOMAIN-SUFFIX,alibaba.com
 DOMAIN,cdn.ark.qq.com
 DOMAIN-SUFFIX,ip-api.com
 DOMAIN,ipv4.icanhazip.com
-IP-CIDR,51.159.53.19/32,no-resolve

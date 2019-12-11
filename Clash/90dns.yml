@@ -1,4 +1,4 @@
-# 90dns
+# > 90DNS
 DOMAIN,conntest.nintendowifi.net,DIRECT
 DOMAIN,ctest.cdn.nintendo.net,DIRECT
 DOMAIN-SUFFIX,nintendo.com,REJECT

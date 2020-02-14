@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,ip-api.com
 DOMAIN,ipv4.icanhazip.com
 DOMAIN,clash.razord.top
 DOMAIN,clash.917605.xyz
+IP-CIDR,47.241.13.223/32,no-resolve

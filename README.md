@@ -1,2 +1,1 @@
-# Self-Use
-Complementary rules for DevineEngine.
+For own use.

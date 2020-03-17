@@ -8,5 +8,5 @@ DOMAIN,cdn.ark.qq.com
 DOMAIN-SUFFIX,ip-api.com
 DOMAIN,ipv4.icanhazip.com
 DOMAIN,clash.razord.top
-IP-CIDR,47.241.13.223/32,no-resolve
 DOMAIN-SUFFIX,steamcontent.com
+DOMAIN,mqq.tenpay.com

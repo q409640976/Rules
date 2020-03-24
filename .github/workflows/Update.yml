@@ -8,7 +8,8 @@ on:
     - cron: "0 0 1 * *"
 
 jobs:
-  90DNS:
+  dns:
+    name: 90DNS
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

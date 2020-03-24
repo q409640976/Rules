@@ -1,6 +1,4 @@
 # > 90DNS
-DOMAIN,conntest.nintendowifi.net,DIRECT
-DOMAIN,ctest.cdn.nintendo.net,DIRECT
 DOMAIN-SUFFIX,nintendo.com,REJECT
 DOMAIN-SUFFIX,nintendo.net,REJECT
 DOMAIN-SUFFIX,nintendo.jp,REJECT
@@ -8,6 +6,9 @@ DOMAIN-SUFFIX,nintendo.co.jp,REJECT
 DOMAIN-SUFFIX,nintendo.co.uk,REJECT
 DOMAIN-SUFFIX,nintendo-europe.com,REJECT
 DOMAIN-SUFFIX,nintendowifi.net,REJECT
+DOMAIN,conntest.nintendowifi.net,DIRECT
+DOMAIN,ctest.cdn.nintendo.net,DIRECT
+DOMAIN,90dns.test,DIRECT
 DOMAIN-SUFFIX,nintendo.es,REJECT
 DOMAIN-SUFFIX,nintendo.co.kr,REJECT
 DOMAIN-SUFFIX,nintendo.tw,REJECT

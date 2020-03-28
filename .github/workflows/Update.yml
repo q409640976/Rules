@@ -17,12 +17,14 @@ jobs:
       run: |
         wget https://gitlab.com/a/90dns/-/raw/master/dnsmasq/dnsmasq.conf -O /tmp/dnsmasq.conf
         sed -i '/^interface.*/d' /tmp/dnsmasq.conf
-        sed -i '1i\# > 90DNS'  /tmp/dnsmasq.conf
         sed -i 's/address=\//DOMAIN,/g' /tmp/dnsmasq.conf
         sed -i 's/DOMAIN,\./DOMAIN-SUFFIX,/g' /tmp/dnsmasq.conf
         sed -i 's/\/127.0.0.1/,REJECT/g' /tmp/dnsmasq.conf
         sed -i 's/\/[0-9].*/,DIRECT/g' /tmp/dnsmasq.conf
-        cat /tmp/dnsmasq.conf > ./Clash/90dns.yml
+        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns.yml
+        grep '.*REJECT' /tmp/dnsmasq.conf >> /tmp/90dns.yml
+        sed -i '1i\# > 90DNS'  /tmp/90dns.yml
+        cat /tmp/90dns.yml > ./Clash/90dns.yml
     - uses: autosuite/autocommit@master
       with:
         commit-message: Update.

@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "0 0 15 * *"
 
 jobs:
   dns:
@@ -27,7 +27,26 @@ jobs:
         cat /tmp/90dns.yml > ./Clash/90dns.yml
     - uses: autosuite/autocommit@master
       with:
-        commit-message: Update.
+        commit-message: Update
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+
+  china_ipv4_list:
+    name: China IPv4 List
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Create local changes
+      run: |
+        wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/surge_china_ipv4.list
+        sed -i 's/^/IP-CIDR,/g' ./Surge/surge_china_ipv4.list
+    - name: Commit files
+      uses: autosuite/autocommit@master
+      with:
+        commit-message: Update
         add-options: -A
     - name: Push changes
       uses: ad-m/github-push-action@master

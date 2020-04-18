@@ -52,3 +52,41 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
+
+  china_ipv6_list:
+    name: China IPv6 List
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Create local changes
+      run: |
+        wget http://ftp.apnic.net/stats/apnic/delegated-apnic-latest -O /tmp/ipv6
+        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/surge_china_ipv6.list
+        sed -i 's/^/IP-CIDR6,/g' ./Surge/surge_china_ipv6.list
+    - name: Commit files
+      uses: autosuite/autocommit@master
+      with:
+        commit-message: Update
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+
+  china_ip_list:
+    name: China IP List
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Create local changes
+      run: |
+        cat ./Surge/surge_china_ipv4.list ./Surge/surge_china_ipv6.list > ./Surge/surge_china_ip.list
+    - name: Commit files
+      uses: autosuite/autocommit@master
+      with:
+        commit-message: Update
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}

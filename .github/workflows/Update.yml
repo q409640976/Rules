@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: "0 0 1 ? * L"
+    - cron: "0 1 */7 * *"
 
 jobs:
   dns:

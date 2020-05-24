@@ -1148,6 +1148,7 @@
 *://araramistudio.jimdo.com/*
 *://artez.org.cn/*
 *://ask.zol.com.cn/*
+*://ata-academy.com/*
 *://ayjz.juergen-schmitz-consulting.de/*
 *://badt.tw/*
 *://baijiahao.baidu.com/*
@@ -1161,8 +1162,11 @@
 *://blog.csdn.net/holybin/*
 *://blog.silucg.com/*
 *://blog.treedown.net/*
+*://blog.wu-boy.com/*
 *://bloomingtonventures.com/*
+*://bradstreetcra.com/*
 *://brrmn.com/*
+*://bryanalders.com/*
 *://bug200.com/*
 *://bugsdb.com/*
 *://bvwc.lumea-verlag.de/*
@@ -1172,6 +1176,7 @@
 *://cachhoc.net/*
 *://ceji.ayotechnology.de/*
 *://ch.nicovideo.jp/*
+*://christadavidson.com/*
 *://chubuntu.com/*
 *://clean-copy-of-onenote.hatenablog.com/*
 *://cloud.tencent.com/developer/*
@@ -1198,6 +1203,7 @@
 *://dev-yakuza.github.io/*
 *://dev4app.com/*
 *://dfuw.redandgold.de/*
+*://dguun.com/*
 *://digicre-inc.co.jp/*
 *://dime.jp/*
 *://dm004.com/*
@@ -1239,6 +1245,7 @@
 *://heoz.galabau-mg.de/*
 *://hjzf8899.com/*
 *://hosf.flusskreuzfahrten-elbe.de/*
+*://hoteles.bluevalencia.com/*
 *://html-coding.co.jp/*
 *://hyhome.com.cn/*
 *://hzhjjx.com/*
@@ -1293,6 +1300,7 @@
 *://lxfd.garage-gentilly-autoroute.fr/*
 *://m.201347.uk.com/*
 *://m.361t.org/*
+*://m.abctbh.com/*
 *://m.ccdswl.com/*
 *://m.copyan.com/*
 *://m.eoudu.com/*
@@ -1319,11 +1327,14 @@
 *://mnst.sport-dpo.de/*
 *://moov.ooo/*
 *://mostud.com/*
+*://mustafaaliduran.com/*
 *://my7475.com/*
 *://mzlw.apollostar-safari.de/*
 *://nara-iku.com/*
+*://natura-karite.com/*
 *://nbri.stephan-messling.de/*
 *://ne0matrix.com/*
+*://neutrikmall.com/*
 *://new-challenge123.com/*
 *://newstopics.jp/*
 *://noknow.info/*
@@ -1348,6 +1359,7 @@
 *://pisuke-code.com/*
 *://pokemori-yun.com/*
 *://prckjk.xyz/*
+*://priorityhospice.com/*
 *://proandroiddev.com/*
 *://probacc.com/*
 *://product.3g.pconline.com.cn/*
@@ -1418,6 +1430,8 @@
 *://thewikihow.com/*
 *://toconakis.tech/*
 *://togetter.com/*
+*://tortortor.pw/*
+*://truelovenet.com/*
 *://truthmoviegroup.wixsite.com/*
 *://ts0818.hatenablog.com/*
 *://tufftargets.com/*
@@ -1462,8 +1476,10 @@
 *://www.07diy.com/*
 *://www.09vv.cn/*
 *://www.10tiao.com/*
+*://www.1688.com/*
 *://www.17qufa.com/*
 *://www.18183.com/*
+*://www.1888generator.com/*
 *://www.23cpc.com/*
 *://www.2616.com.cn/*
 *://www.295a.com/*
@@ -1482,10 +1498,13 @@
 *://www.7lg.net/*
 *://www.9999ktv.com/*
 *://www.ab2s.com/*
+*://www.abcxzh.com/*
 *://www.accessoft.com/*
 *://www.ajpsp.com/*
 *://www.amazon.com/*
 *://www.androidpit.com/*
+*://www.anyolife.com/*
+*://www.azsalon527.com/*
 *://www.baeldung.com/*
 *://www.baidu.com/*
 *://www.bdqxgw.com/*
@@ -1526,6 +1545,7 @@
 *://www.dnpz.net/*
 *://www.dofe.com.cn/*
 *://www.dondari.com/*
+*://www.donnaspetcare.com/*
 *://www.drjordanmall.com/*
 *://www.dzydieo.site/*
 *://www.eternalcq.com/*
@@ -1553,6 +1573,7 @@
 *://www.harngtong.url.tw/*
 *://www.hchygw.com/*
 *://www.hello.so/*
+*://www.hn-hongyuan.com/*
 *://www.hongyazi.org/*
 *://www.hotbak.net/*
 *://www.hq396.com/*
@@ -1587,6 +1608,7 @@
 *://www.jznk99.com/*
 *://www.kafan.cn/*
 *://www.ku3101.net/*
+*://www.labellemoriniere.com/*
 *://www.lansingip.com/*
 *://www.lanzhouyangsheng.com/*
 *://www.lanzhouzaixian.cn/*
@@ -1598,11 +1620,13 @@
 *://www.miliol.org/*
 *://www.moflier.com/*
 *://www.moneytlk.com/*
+*://www.moulin-larroque.com/*
 *://www.mzgsmc.com/*
 *://www.nippon.com/*
 *://www.njqg.net/*
 *://www.ojit.com/*
 *://www.ok168198.com/*
+*://www.operatoriforex.com/*
 *://www.orcode.com/*
 *://www.pai-hang-bang.com/*
 *://www.paloma.cn/*
@@ -1616,6 +1640,7 @@
 *://www.programcreek.com/*
 *://www.proverbmeaning.com/*
 *://www.ptkaishan.com/*
+*://www.q578.com/*
 *://www.qfjhb.cn/*
 *://www.qh24.com/*
 *://www.qingtingip.com/*
@@ -1639,6 +1664,7 @@
 *://www.sxwshm.com/*
 *://www.taobao.com/*
 *://www.tastones.com/*
+*://www.techhubonline.com/*
 *://www.techscore.com/*
 *://www.teipy.com/*
 *://www.thinbug.com/*

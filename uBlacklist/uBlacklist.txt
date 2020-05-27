@@ -462,6 +462,7 @@
 *://*.insideabritishmumskitchen.com/*
 *://*.iruixun.cn/*
 *://*.ishenping.com/*
+*://*.it-swarm.dev/*
 *://*.it-swarm.net/*
 *://*.it1352.com/*
 *://*.itdaan.com/*
@@ -800,6 +801,7 @@
 *://*.souzhuang.cn/*
 *://*.speed.m.baidu.com/*
 *://*.src-bin.com/*
+*://*.stacknoob.com/*
 *://*.stackoom.com/*
 *://*.stackovernet.com/*
 *://*.stackoverrun.com/*

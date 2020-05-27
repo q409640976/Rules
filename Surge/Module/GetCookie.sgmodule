@@ -6,9 +6,7 @@ Cookie_Manga.js = type=http-request,pattern=^https:\/\/manga\.bilibili\.com\/.*\
 Cookie_JD_DailyBonus.js = type=http-request,pattern=^https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 Cookie_52pojie.js = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 Cookie_Meituan.js = type=http-request,pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true
-Cookie_Meituan.js = type=http-request,pattern=^https:\/\/www\.v2ex\.com\/mission\/daily,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js
-Cookie_Meituanwaimai_1.js = type=http-request,pattern=^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
-Cookie_Meituanwaimai_2.js = type=http-request,pattern=^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js,requires-body=true
+Cookie_V2ex.js = type=http-request,pattern=^https:\/\/www\.v2ex\.com\/mission\/daily,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js
 
 [MITM]
 hostname = %APPEND% * api.m.jd.com, manga.bilibili.com, www.52pojie.cn, i.meituan.com, *.v2ex.com, promotion.waimai.meituan.com

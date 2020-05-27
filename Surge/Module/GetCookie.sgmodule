@@ -1,5 +1,5 @@
 #!name=Get Cookie
-#!desc=Get cookies for Bilibili ,JD and 52pojie.
+#!desc=Get cookies for Bilibili ,JD , etc.
 
 [Script]
 Cookie_Manga.js = type=http-request,pattern=^https:\/\/manga\.bilibili\.com\/.*\.User\/GetWallet,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js

@@ -2,14 +2,17 @@
 DOMAIN-SUFFIX,evernote.com
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,tjupt.org
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN,status.org.cn
+
+# > Save China Mobile
 DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,msecnd.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,s-microsoft.com
+DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,windows.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,msecnd.net
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN,status.org.cn
 DOMAIN-SUFFIX,plex.tv

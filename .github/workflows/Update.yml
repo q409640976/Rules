@@ -110,6 +110,7 @@ jobs:
         curl https://raw.githubusercontent.com/YeSilin/uBlacklist/master/list.txt >> /tmp/list
         curl https://raw.githubusercontent.com/teokree/blacklist/master/blacklist.txt >> /tmp/list
         curl https://raw.githubusercontent.com/nonPointer/uBlacklist-Subscription/master/blacklist.txt >> /tmp/list
+        cat ./uBlacklist/Extra.txt >> /tmp/list
         sort -u /tmp/list | sed 's/!.*//g' | sed '/^$/d'> uBlacklist/uBlacklist.txt
     - name: Commit files
       uses: autosuite/autocommit@master

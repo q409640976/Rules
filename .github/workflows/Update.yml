@@ -47,8 +47,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
-        wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/surge_china_ipv4.list
-        sed -i 's/^/IP-CIDR,/g' ./Surge/surge_china_ipv4.list
+        wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/IPDB/surge_china_ipv4.list
+        sed -i 's/^/IP-CIDR,/g' ./Surge/IPDB/surge_china_ipv4.list
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
@@ -67,8 +67,8 @@ jobs:
     - name: Create local changes
       run: |
         wget http://ftp.apnic.net/stats/apnic/delegated-apnic-latest -O /tmp/ipv6
-        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/surge_china_ipv6.list
-        sed -i 's/^/IP-CIDR6,/g' ./Surge/surge_china_ipv6.list
+        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.list
+        sed -i 's/^/IP-CIDR6,/g' ./Surge/IPDB/surge_china_ipv6.list
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
@@ -86,7 +86,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
-        cat ./Surge/surge_china_ipv4.list ./Surge/surge_china_ipv6.list > ./Surge/surge_china_ip.list
+        cat ./Surge/surge_china_ipv4.list ./Surge/surge_china_ipv6.list > ./Surge/IPDB/surge_china_ip.list
     - name: Commit files
       uses: autosuite/autocommit@master
       with:

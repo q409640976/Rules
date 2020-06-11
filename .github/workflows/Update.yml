@@ -87,7 +87,7 @@ jobs:
     - name: Create local changes
       run: |
         cat ./Surge/IPDB/surge_china_ipv4.list ./Surge/IPDB/surge_china_ipv6.list > ./Surge/IPDB/surge_china_ip.list
-        wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Surge/IPDB/china_ip_list.mmdb
+        wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
     - name: Commit files
       uses: autosuite/autocommit@master
       with:

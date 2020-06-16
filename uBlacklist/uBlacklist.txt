@@ -189,6 +189,7 @@
 *://*.baishengyl82.date/*
 *://*.bannedbook.org/*
 *://*.banshiqnr.com/*
+*://*.baobaosz.com/*
 *://*.baopen.xyz/*
 *://*.barcode-label.com.cn/*
 *://*.bartender.cc/*
@@ -291,6 +292,7 @@
 *://*.codecocoa.com/*
 *://*.codeday.me
 *://*.codeday.me/*
+*://*.codeleading.com/*
 *://*.codenong.com/*
 *://*.codeqq.com/*
 *://*.coder.work/*
@@ -404,6 +406,7 @@
 *://*.filt.cn/*
 *://*.findapk.cn/*
 *://*.findeen.com/*
+*://*.fine-titania.com/*
 *://*.fiscusseamlessguttering.com/*
 *://*.fjhbg.cn/*
 *://*.fjyy.ncznx.top/*
@@ -508,6 +511,7 @@
 *://*.howsou.com/*
 *://*.howtoip.com/*
 *://*.hq396.com/*
+*://*.hrbqianqiu.com/*
 *://*.hrichina.org/*
 *://*.hssjw.cn/*
 *://*.hszw.org/*
@@ -558,6 +562,7 @@
 *://*.jayunqi.com/*
 *://*.jb51.net/*
 *://*.jdon.com/*
+*://*.jiajuwangluo.com/*
 *://*.jiajvhuishou.com/*
 *://*.jianghuernv.com/*
 *://*.jiangnews.com/*
@@ -623,6 +628,7 @@
 *://*.laotela.com/*
 *://*.lcjkgc.cn/*
 *://*.leadoutnowchi.org/*
+*://*.legacy-lci.com/*
 *://*.lfhacks.com/*
 *://*.lfkfqe.xyz/*
 *://*.lfkz.ucvst.top/*
@@ -952,6 +958,7 @@
 *://*.sydiy.cn/*
 *://*.systemcity.cn/*
 *://*.sywq119.com/*
+*://*.syydpump.com/*
 *://*.szredsafe.com/*
 *://*.tanghtine.com/*
 *://*.tangwangjj.com/*
@@ -974,6 +981,7 @@
 *://*.tihaofree.com/*
 *://*.tiyiba.com/*
 *://*.tiyujiaoliu.com/*
+*://*.tj-huangming.com/*
 *://*.tjqncj.com/*
 *://*.tmjd.27mai.com/*
 *://*.tomatoesweb.com/*
@@ -1306,6 +1314,7 @@
 *://66.wendadaohang.com/*
 *://842504.com/*
 *://996yx.com/*
+*://a78999.net/*
 *://ab-tc.com/*
 *://adsc.krank-durch-mobilfunk.de/*
 *://aeam.nervenbahnmassage.de/*

@@ -199,3 +199,12 @@
 *://mos86.com/*
 *://chuansongme.com/*
 *://codeleading.com/*
+*://*.codeleading.com/*
+*://*.baobaosz.com/*
+*://*.tj-huangming.com/*
+*://*.fine-titania.com/*
+*://*.jiajuwangluo.com/*
+*://*.syydpump.com/*
+*://*.legacy-lci.com/*
+*://*.hrbqianqiu.com/*
+*://a78999.net/*

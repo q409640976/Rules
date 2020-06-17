@@ -1,4 +1,4 @@
-# > Lan List
+# > LAN List
 DOMAIN-SUFFIX,local
 DOMAIN,localhost
 IP-CIDR,0.0.0.0/8

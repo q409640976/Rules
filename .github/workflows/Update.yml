@@ -48,6 +48,7 @@ jobs:
     - name: Create local changes
       run: |
         wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/IPDB/surge_china_ipv4.txt
+        cat ./Surge/IPDB/surge_china_ipv4.txt | sed 's/^/  - /g:' ｜ sed '1i\payload:' > ./Clash/china_ipv4.yml
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
@@ -67,6 +68,7 @@ jobs:
       run: |
         wget http://ftp.apnic.net/stats/apnic/delegated-apnic-latest -O /tmp/ipv6
         cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt
+        cat ./Surge/IPDB/surge_china_ipv6.txt | sed 's/^/  - /g:' ｜ sed '1i\payload:' > ./Clash/china_ipv6.yml
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
@@ -85,6 +87,7 @@ jobs:
     - name: Create local changes
       run: |
         cat ./Surge/IPDB/surge_china_ipv4.txt ./Surge/IPDB/surge_china_ipv6.txt > ./Surge/IPDB/surge_china_ip.txt
+        cat ./Surge/IPDB/surge_china_ip.txt | sed 's/^/  - /g:' ｜ sed '1i\payload:' > ./Clash/china_ip.yml
         wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
     - name: Commit files
       uses: autosuite/autocommit@master

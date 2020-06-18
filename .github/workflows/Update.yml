@@ -22,9 +22,9 @@ jobs:
         sed -i 's/\/127.0.0.1/,REJECT/g' /tmp/dnsmasq.conf
         sed -i 's/\/[0-9].*/,DIRECT/g' /tmp/dnsmasq.conf
         grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns.yml
-        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns_direct_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_direct_provider.yml && sed -i "s/$/'/g" /tmp/90dns_direct_provider.yml && sed -i 's/,DIRECT$//g' /tmp/90dns_direct_provider.yml
+        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns_direct_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_direct_provider.yml && sed -i "s/$/'/g" /tmp/90dns_direct_provider.yml && sed -i 's/,DIRECT//g' /tmp/90dns_direct_provider.yml
         grep '.*REJECT' /tmp/dnsmasq.conf >> /tmp/90dns.yml
-        grep '.*REJECT' /tmp/dnsmasq.conf > /tmp/90dns_reject_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_reject_provider.yml && sed -i "s/$/'/g" /tmp/90dns_reject_provider.yml && sed -i 's/,REJECT$//g' /tmp/90dns_reject_provider.yml
+        grep '.*REJECT' /tmp/dnsmasq.conf > /tmp/90dns_reject_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_reject_provider.yml && sed -i "s/$/'/g" /tmp/90dns_reject_provider.yml && sed -i 's/,REJECT//g' /tmp/90dns_reject_provider.yml
         sed -i '1i\# > 90DNS'  /tmp/90dns.yml
         sed -i '1i\payload:'  /tmp/90dns_direct_provider.yml
         sed -i '1i\payload:'  /tmp/90dns_reject_provider.yml

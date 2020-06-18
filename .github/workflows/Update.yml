@@ -22,9 +22,9 @@ jobs:
         sed -i 's/\/127.0.0.1/,REJECT/g' /tmp/dnsmasq.conf
         sed -i 's/\/[0-9].*/,DIRECT/g' /tmp/dnsmasq.conf
         grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns.yml
-        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns_direct_provider.yml && sed -i 's/^/  - /g' /tmp/90dns_direct_provider.yml && sed -i 's/,DIRECT$//g' /tmp/90dns_direct_provider.yml
+        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns_direct_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_direct_provider.yml && sed -i "s/$/'/g" /tmp/90dns_direct_provider.yml && sed -i 's/,DIRECT$//g' /tmp/90dns_direct_provider.yml
         grep '.*REJECT' /tmp/dnsmasq.conf >> /tmp/90dns.yml
-        grep '.*REJECT' /tmp/dnsmasq.conf > /tmp/90dns_reject_provider.yml && sed -i 's/^/  - /g' /tmp/90dns_reject_provider.yml && sed -i 's/,REJECT$//g' /tmp/90dns_reject_provider.yml
+        grep '.*REJECT' /tmp/dnsmasq.conf > /tmp/90dns_reject_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_reject_provider.yml && sed -i "s/$/'/g" /tmp/90dns_reject_provider.yml && sed -i 's/,REJECT$//g' /tmp/90dns_reject_provider.yml
         sed -i '1i\# > 90DNS'  /tmp/90dns.yml
         sed -i '1i\payload:'  /tmp/90dns_direct_provider.yml
         sed -i '1i\payload:'  /tmp/90dns_reject_provider.yml
@@ -85,9 +85,9 @@ jobs:
     - name: Create local changes
       run: |
         cat ./Surge/IPDB/surge_china_ipv4.txt ./Surge/IPDB/surge_china_ipv6.txt > ./Surge/IPDB/surge_china_ip.txt
-        sed -e 's/^/  - /g' -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
-        sed -e 's/^/  - /g' -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
-        sed -e 's/^/  - /g' -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
+        sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
+        sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
+        sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
         wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
     - name: Commit files
       uses: autosuite/autocommit@master

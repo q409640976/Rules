@@ -1692,6 +1692,7 @@
 *://www.54jqr.com/*
 *://www.565k.com/*
 *://www.58pjy.com/*
+*://www.684758.com/*
 *://www.6tuba.com/*
 *://www.7711182.com/*
 *://www.7lg.net/*
@@ -1738,6 +1739,7 @@
 *://www.dabbsports.com/*
 *://www.daihema.com/*
 *://www.dama123.com/*
+*://www.dapaizixun.com/*
 *://www.darentang.org/*
 *://www.dayupaiming.com/*
 *://www.dev4app.com/*
@@ -1769,6 +1771,7 @@
 *://www.gizmodo.jp/*
 *://www.glblkfw.com/*
 *://www.guangbaobei.net/*
+*://www.gzwcjs.com/*
 *://www.habeiwaiyuxuexiao.com/*
 *://www.haicoder.net/*
 *://www.haimenzhichuang.com/*
@@ -1829,6 +1832,7 @@
 *://www.njqg.net/*
 *://www.ojit.com/*
 *://www.ok168198.com/*
+*://www.oneho.cn/*
 *://www.operatoriforex.com/*
 *://www.orcode.com/*
 *://www.pai-hang-bang.com/*
@@ -1893,6 +1897,7 @@
 *://www.whstm.com/*
 *://www.wnt777.com/*
 *://www.xhsdzjys.com/*
+*://www.xiaozhishi.net/*
 *://www.xinfuq.cn/*
 *://www.xinhexinli.com/*
 *://www.xsol.co.jp/*
@@ -1901,6 +1906,7 @@
 *://www.xyj321.com/*
 *://www.yijyi.com/*
 *://www.yiper.org/*
+*://www.yisu.com/*
 *://www.yiyisoft.com/*
 *://www.ymw.cn/*
 *://www.zgxnjc.com/*
@@ -1923,7 +1929,6 @@
 *://yq.aliyun.com/*
 *://ywcreations.com/*
 *://zeepline.pw/*
-*://zh.wikipedia.org/*
 *://zhidao.baidu.com/*
 *://zhidao.baidu.hk/*
 *://zidao.baidu.com/search?*

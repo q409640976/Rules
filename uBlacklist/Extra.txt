@@ -208,3 +208,9 @@
 *://*.legacy-lci.com/*
 *://*.hrbqianqiu.com/*
 *://a78999.net/*
+*://*.jeepyurongfu.net/*
+*://*.anhuilife.com/*
+*://*.win10xiazai.com/*
+*://*.ihulu.cn/*
+*://xjbol.com/*
+*://*.gzlonglai.com/*

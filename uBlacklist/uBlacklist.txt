@@ -159,6 +159,7 @@
 *://*.androidcookie.com/*
 *://*.andseclab.com/*
 *://*.angiefans.com/*
+*://*.anhuilife.com/*
 *://*.answer-id.com/*
 *://*.antarcticshop.com/*
 *://*.anysafer.com/*
@@ -463,6 +464,7 @@
 *://*.gycc.com/*
 *://*.gz-has.com/*
 *://*.gzdxdjk.com/*
+*://*.gzlonglai.com/*
 *://*.haier188.us/*
 *://*.hang365.com/*
 *://*.hangyexia.com/*
@@ -539,6 +541,7 @@
 *://*.iconworkshop.cn/*
 *://*.icopy.site/*
 *://*.ihfexpo.com/*
+*://*.ihulu.cn/*
 *://*.iizhao.com/**://*.0028i.com/*
 *://*.ikue.info/*
 *://*.image.haosou.com/*
@@ -562,6 +565,7 @@
 *://*.jayunqi.com/*
 *://*.jb51.net/*
 *://*.jdon.com/*
+*://*.jeepyurongfu.net/*
 *://*.jiajuwangluo.com/*
 *://*.jiajvhuishou.com/*
 *://*.jianghuernv.com/*
@@ -1063,6 +1067,7 @@
 *://*.whoisua.com/*
 *://*.wienfm.com/*
 *://*.wikioi.com/*
+*://*.win10xiazai.com/*
 *://*.winenine.com/*
 *://*.wntzx.cn/*
 *://*.wodekuandai.com/*
@@ -1918,6 +1923,7 @@
 *://x4x2.com/*
 *://xbuba.com/*
 *://xckd.hamsterkiste-deutsch.de/*
+*://xjbol.com/*
 *://xjx1.com/*
 *://xqdj.hahnbacher-fotos.de/*
 *://xrdv.rpa-cee.de/*

@@ -1540,6 +1540,7 @@
 *://newstopics.jp/*
 *://noknow.info/*
 *://note.com/o_matsuo/*
+*://nzuan.net/*
 *://octolinker-demo.now.sh/*
 *://odde.felixmeier.de/*
 *://okoo.5watches.de/*
@@ -1697,6 +1698,7 @@
 *://www.54jqr.com/*
 *://www.565k.com/*
 *://www.58pjy.com/*
+*://www.600911.cn/*
 *://www.684758.com/*
 *://www.6tuba.com/*
 *://www.7711182.com/*
@@ -1887,6 +1889,7 @@
 *://www.tqhnet.com/*
 *://www.trust1688.com/*
 *://www.tutorialspoint.com/*
+*://www.uoften.com/*
 *://www.uucan.cn/*
 *://www.uwenku.com/*
 *://www.virment.com/*
@@ -1902,6 +1905,7 @@
 *://www.whstm.com/*
 *://www.wnt777.com/*
 *://www.xhsdzjys.com/*
+*://www.xiaozhaolaila.com/*
 *://www.xiaozhishi.net/*
 *://www.xinfuq.cn/*
 *://www.xinhexinli.com/*

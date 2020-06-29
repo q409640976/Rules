@@ -40,64 +40,23 @@ jobs:
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
 
-  china_ipv4_list:
-    name: China IPv4 List
+  china_ip:
+    name: China IP
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
         wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/IPDB/surge_china_ipv4.txt
-    - name: Commit files
-      uses: autosuite/autocommit@master
-      with:
-        commit-message: Update
-        add-options: -A
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.REPO_TOKEN }}
 
-  china_ipv6_list:
-    name: China IPv6 List
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Create local changes
-      run: |
         wget http://ftp.apnic.net/stats/apnic/delegated-apnic-latest -O /tmp/ipv6
-        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt 
-    - name: Commit files
-      uses: autosuite/autocommit@master
-      with:
-        commit-message: Update
-        add-options: -A
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.REPO_TOKEN }}
+        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt
 
-  china_ip_list:
-    name: China IP List
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Create local changes
-      run: |
         cat ./Surge/IPDB/surge_china_ipv4.txt ./Surge/IPDB/surge_china_ipv6.txt > ./Surge/IPDB/surge_china_ip.txt
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
         wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
-    - name: Commit files
-      uses: autosuite/autocommit@master
-      with:
-        commit-message: Update
-        add-options: -A
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.REPO_TOKEN }}
 
   ublacklist:
     name: uBlacklist
@@ -114,6 +73,28 @@ jobs:
         curl https://raw.githubusercontent.com/nonPointer/uBlacklist-Subscription/master/blacklist.txt >> /tmp/list
         cat ./uBlacklist/Extra.txt >> /tmp/list
         sort -u /tmp/list | sed 's/!.*//g' | sed '/^$/d'> uBlacklist/uBlacklist.txt
+    - name: Commit files
+      uses: autosuite/autocommit@master
+      with:
+        commit-message: Update
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+
+  QuantumultX:
+    name: Quantumult X
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Get Hostnames
+      run: |
+        python ./QuantumultX/getHostname.py
     - name: Commit files
       uses: autosuite/autocommit@master
       with:

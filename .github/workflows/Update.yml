@@ -33,7 +33,7 @@ jobs:
         cat /tmp/90dns_reject_provider.yml > ./Clash/90dns_reject_provider.yml
     - uses: autosuite/autocommit@master
       with:
-        commit-message: Update
+        commit-message: Update 90DNS
         add-options: -A
     - name: Push changes
       uses: ad-m/github-push-action@master
@@ -57,6 +57,15 @@ jobs:
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
         wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
+    - name: Commit files
+      uses: autosuite/autocommit@master
+      with:
+        commit-message: Update China IP
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
 
   ublacklist:
     name: uBlacklist
@@ -76,7 +85,7 @@ jobs:
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
-        commit-message: Update
+        commit-message: Update uBlacklist
         add-options: -A
     - name: Push changes
       uses: ad-m/github-push-action@master
@@ -98,7 +107,7 @@ jobs:
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
-        commit-message: Update
+        commit-message: Update Hostnames
         add-options: -A
     - name: Push changes
       uses: ad-m/github-push-action@master

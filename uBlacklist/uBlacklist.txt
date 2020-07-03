@@ -1499,6 +1499,7 @@
 *://m.cnmmv.com/*
 *://m.copyan.com/*
 *://m.ebw100.com/*
+*://m.enkj.com/*
 *://m.eoudu.com/*
 *://m.gdyadu.com/*
 *://m.glass321.com/*
@@ -1819,6 +1820,7 @@
 *://www.jyhgx.com/*
 *://www.jznk99.com/*
 *://www.kafan.cn/*
+*://www.ksyun.com/developer/article/*
 *://www.ku3101.net/*
 *://www.labellemoriniere.com/*
 *://www.lansingip.com/*
@@ -1944,6 +1946,7 @@
 *://zidao.baidu.com/search?*
 *://zkjh.fieldball.de/*
 *://zlvj.signalhund.de/*
+*://zm.sm-tc.cn/*
 *://zoomy.info/*
 *://zrsd.schorfheidecarport.de/*
 /(.+\.)?\d{6}\.vip/

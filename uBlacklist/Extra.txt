@@ -214,3 +214,6 @@
 *://*.ihulu.cn/*
 *://xjbol.com/*
 *://*.gzlonglai.com/*
+*://zm.sm-tc.cn/*
+*://www.ksyun.com/developer/article/*
+*://m.enkj.com/*

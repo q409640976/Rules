@@ -222,6 +222,7 @@
 *://*.bjqcjh.com/*
 *://*.bjs.org/*
 *://*.blog.jiecaoba.cn/*
+*://*.blogjava.net/*
 *://*.bmlu.com.cn/*
 *://*.boadt8.co/*
 *://*.boboad.com/*
@@ -1600,6 +1601,7 @@
 *://server.etutsplus.com/*
 *://sgub.kerstinraphahn.de/*
 *://sh.360kuai.com/*
+*://shangdixinxi.com/*
 *://shenzhenxw.net/*
 *://shigoto-ba.com/*
 *://shop.pcpop.com/*

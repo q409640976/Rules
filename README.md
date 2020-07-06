@@ -19,9 +19,9 @@
   - [Scholar](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/Scholar.list)
   - [LAN](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/LAN.list)
 ### China IP
-  - [Chine IPv4](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/surge_china_ipv4.txt)
-  - [Chine IPv6](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/surge_china_ipv6.txt)
-  - [Chine IP](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/surge_china_ip.txt)
+  - [Chine IPv4](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/IPDB/surge_china_ipv4.txt)
+  - [Chine IPv6](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/IPDB/surge_china_ipv6.txt)
+  - [Chine IP](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/Surge/IPDB/surge_china_ip.txt)
   
 ## Quantumult X
   - [Advertising](https://cdn.jsdelivr.net/gh/Apocalypsor/Rules@master/QuantumultX/Advertising.conf)

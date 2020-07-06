@@ -15,19 +15,13 @@ jobs:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
-        wget https://gitlab.com/a/90dns/-/raw/master/dnsmasq/dnsmasq.conf -O /tmp/dnsmasq.conf
-        sed -i '/^interface.*/d' /tmp/dnsmasq.conf
-        sed -i 's/address=\//DOMAIN,/g' /tmp/dnsmasq.conf
-        sed -i 's/DOMAIN,\./DOMAIN-SUFFIX,/g' /tmp/dnsmasq.conf
-        sed -i 's/\/127.0.0.1/,REJECT/g' /tmp/dnsmasq.conf
-        sed -i 's/\/[0-9].*/,DIRECT/g' /tmp/dnsmasq.conf
+        curl https://gitlab.com/a/90dns/-/raw/master/dnsmasq/dnsmasq.conf > /tmp/dnsmasq.conf
+        sed -i -e '/^interface.*/d' -e 's/address=\//DOMAIN,/g' -e 's/DOMAIN,\./DOMAIN-SUFFIX,/g' -e 's/\/127.0.0.1/,REJECT/g' -e 's/\/[0-9].*/,DIRECT/g' /tmp/dnsmasq.conf
         grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns.yml
-        grep '.*DIRECT' /tmp/dnsmasq.conf > /tmp/90dns_direct_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_direct_provider.yml && sed -i "s/$/'/g" /tmp/90dns_direct_provider.yml && sed -i 's/,DIRECT//g' /tmp/90dns_direct_provider.yml
+        grep '.*DIRECT' /tmp/dnsmasq.conf | sed -e "s/^/  - '/g" -e "s/$/'/g" -e 's/,DIRECT//g' -e '1i\payload:' > /tmp/90dns_direct_provider.yml
         grep '.*REJECT' /tmp/dnsmasq.conf >> /tmp/90dns.yml
-        grep '.*REJECT' /tmp/dnsmasq.conf > /tmp/90dns_reject_provider.yml && sed -i "s/^/  - '/g" /tmp/90dns_reject_provider.yml && sed -i "s/$/'/g" /tmp/90dns_reject_provider.yml && sed -i 's/,REJECT//g' /tmp/90dns_reject_provider.yml
+        grep '.*REJECT' /tmp/dnsmasq.conf | sed -e "s/^/  - '/g" -e "s/$/'/g" -e 's/,REJECT//g' -e '1i\payload:' > /tmp/90dns_reject_provider.yml 
         sed -i '1i\# > 90DNS'  /tmp/90dns.yml
-        sed -i '1i\payload:'  /tmp/90dns_direct_provider.yml
-        sed -i '1i\payload:'  /tmp/90dns_reject_provider.yml
         cat /tmp/90dns.yml > ./Clash/90dns.yml
         cat /tmp/90dns_direct_provider.yml > ./Clash/90dns_direct_provider.yml
         cat /tmp/90dns_reject_provider.yml > ./Clash/90dns_reject_provider.yml
@@ -47,16 +41,15 @@ jobs:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
-        wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt -O ./Surge/IPDB/surge_china_ipv4.txt
+        curl https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt > ./Surge/IPDB/surge_china_ipv4.txt
 
-        wget http://ftp.apnic.net/stats/apnic/delegated-apnic-latest -O /tmp/ipv6
-        cat /tmp/ipv6 | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt
+        curl http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/CN/&&/ipv6/ {print "[" $4 "]/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt
 
         cat ./Surge/IPDB/surge_china_ipv4.txt ./Surge/IPDB/surge_china_ipv6.txt > ./Surge/IPDB/surge_china_ip.txt
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
-        wget https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -O ./Clash/china_ip_list.mmdb
+        curl https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -o ./Clash/china_ip_list.mmdb
     - name: Commit files
       uses: autosuite/autocommit@master
       with:

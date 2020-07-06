@@ -217,3 +217,5 @@
 *://zm.sm-tc.cn/*
 *://www.ksyun.com/developer/article/*
 *://m.enkj.com/*
+*://*.blogjava.net/*
+*://shangdixinxi.com/*

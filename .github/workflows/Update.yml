@@ -80,6 +80,9 @@ jobs:
         curl https://raw.githubusercontent.com/YeSilin/uBlacklist/master/list.txt >> /tmp/list
         curl https://raw.githubusercontent.com/teokree/blacklist/master/blacklist.txt >> /tmp/list
         curl https://raw.githubusercontent.com/nonPointer/uBlacklist-Subscription/master/blacklist.txt >> /tmp/list
+        curl https://raw.githubusercontent.com/gyli/Blocklist/master/BLOCKLIST | sed -e 's/^/*:\/\//g' -e 's/$/\/*/g' >> /tmp/list
+        curl https://raw.githubusercontent.com/scyrte/uBlacklist-Subscription/master/blacklist.txt | sed -e 's/^/*:\/\//g' -e 's/$/\/*/g' >> /tmp/list
+        curl https://raw.githubusercontent.com/yangjingchuang/ublacklist-subscription/master/uBlacklist.txt >> /tmp/list
         cat ./uBlacklist/Extra.txt >> /tmp/list
         sort -u /tmp/list | sed 's/!.*//g' | sed '/^$/d'> uBlacklist/uBlacklist.txt
     - name: Commit files

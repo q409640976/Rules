@@ -45,7 +45,7 @@ jobs:
 
         curl http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/CN/&&/ipv6/ {print "[" $4 "]/" $5}' | cat > ./Surge/IPDB/surge_china_ipv6.txt
         
-        echo '\n' > /tmp/blank
+        echo -e '\n' > /tmp/blank
         cat ./Surge/IPDB/surge_china_ipv4.txt /tmp/blank ./Surge/IPDB/surge_china_ipv6.txt > ./Surge/IPDB/surge_china_ip.txt
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml

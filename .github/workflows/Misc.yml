@@ -24,8 +24,8 @@ jobs:
     - name: Create local changes
       run: |
         rm -rf Misc/*
-        git clone -b master https://github.com/DivineEngine/Profiles.git Misc/DevineEngine
-        rm -rf Misc/DevineEngine/.git
+        git clone -b master https://github.com/DivineEngine/Profiles.git Misc/DivineEngine
+        rm -rf Misc/DivineEngine/.git
         git clone -b master https://github.com/eHpo1/Rules.git Misc/eHpo1
         rm -rf Misc/eHpo1/.git
     - uses: autosuite/autocommit@master

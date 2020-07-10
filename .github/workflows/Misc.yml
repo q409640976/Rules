@@ -1,0 +1,45 @@
+name: Update
+
+on:
+  push:
+    branches: 
+      - master
+  schedule:
+    - cron: "0 */1 * * *"
+
+jobs:
+  rules:
+    name: Update rules from other repos
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Add Gitee
+      env:
+        GITEE_USERNAME: apocalypsor
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+      run: |
+        git remote add old https://github.com/Apocalypsor/Rules.git
+        git fetch --unshallow old
+        git remote add gitee https://$GITEE_USERNAME:$GITEE_TOKEN@gitee.com/$GITEE_USERNAME/Rules.git
+    - name: Create local changes
+      run: |
+        rm -rf Misc/*
+        git clone -b master https://github.com/DivineEngine/Profiles.git Misc/DevineEngine
+        rm -rf Misc/DevineEngine/.git
+        git clone -b master https://github.com/eHpo1/Rules.git Misc/eHpo1
+        rm -rf Misc/eHpo1/.git
+    - uses: autosuite/autocommit@master
+      with:
+        commit-message: Update Rules
+        add-options: -A
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+    - name: Github ➡ Gitee
+      run: |
+        git reset HEAD~
+        rm -rf .github
+        git add .
+        git commit -am 'Update Rules'
+        git push gitee master -f || echo 'Everything up-to-date!'

@@ -219,3 +219,7 @@
 *://m.enkj.com/*
 *://*.blogjava.net/*
 *://shangdixinxi.com/*
+*://phpor.net/*
+*://*.249249.xyz/*
+*://hostsidc.com/*
+*://*.liulangcat.com/*

@@ -45,6 +45,7 @@
 *://*.20122011.org/*
 *://*.2266601.com/*
 *://*.23cpc.com/*
+*://*.249249.xyz/*
 *://*.2996299.com/*
 *://*.2a2d75.dcmir4f.com/*
 *://*.2p8n6.site/*
@@ -641,6 +642,7 @@
 *://*.lighteningtikes.com/*
 *://*.linksure.cn/*
 *://*.linqq.net/*
+*://*.liulangcat.com/*
 *://*.live1234.com.cn/*
 *://*.liwu.bi/*
 *://*.lkjfglass.com/*
@@ -33346,6 +33348,7 @@
 *://hostalnersan.com/*
 *://hostamo.com/*
 *://hostinge.cn/*
+*://hostsidc.com/*
 *://hotbak.net/*
 *://hotbarebaking.com/*
 *://hotcl.com/*
@@ -48679,6 +48682,7 @@
 *://phperz.com/*
 *://phpfensi.com/*
 *://phph.info/*
+*://phpor.net/*
 *://phpsite.net/*
 *://phpzhidao.net/*
 *://phqhf.com/*

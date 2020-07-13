@@ -50,7 +50,8 @@ jobs:
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv4.txt > ./Clash/china_ipv4.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ipv6.txt > ./Clash/china_ipv6.yml
         sed -e "s/^/  - '/g" -e "s/$/'/g" -e '1i\payload:' ./Surge/IPDB/surge_china_ip.txt > ./Clash/china_ip.yml
-        curl https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -o ./Clash/china_ip_list.mmdb
+
+        curl https://github.com/alecthw/mmdb_china_ip_list/releases/latest/download/china_ip_list.mmdb -Lo ./Clash/china_ip_list.mmdb
     - name: Commit files
       uses: autosuite/autocommit@master
       with:
